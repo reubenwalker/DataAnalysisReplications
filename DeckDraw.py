@@ -10,13 +10,3 @@ while ((pO != []) & (cont.lower() != 'n')):
                  +', Pull next deck? Press enter or enter "n" to quit.')
     print(deck)
 
-#Numpy alternative
-#Mechanic to choose decks from a pot
-n = int(input('How many decks are there?'))
-potOrder = list(np.random.permutation(range(1,(n+1))))
-pO = potOrder
-cont = ''
-while ((pO != []) & (cont.lower() != 'n')):
-    cont = input('Print next deck? Press enter or enter "n" to quit.')
-    print('Deck number: ' + str(pO.pop()))
-
